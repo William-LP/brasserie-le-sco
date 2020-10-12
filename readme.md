@@ -18,3 +18,4 @@ Live : https://william-lp.github.io/brasserie-le-sco/
 - Mettre les photos
 - Update des textes
 - Copyright (William) vers un lien existant
+- Le site sur mobile fait un peu de la merde
