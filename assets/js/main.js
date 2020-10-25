@@ -179,7 +179,9 @@
     autoplay: true,
     dots: true,
     loop: true,
-    items: 1
+    items: 1,
+    smartSpeed: 2500,
+    autoplayTimeout : 6500
   });
 
   // Testimonials carousel (uses the Owl Carousel library)
