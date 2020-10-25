@@ -12,10 +12,6 @@ Live : https://william-lp.github.io/brasserie-le-sco/
 
 # To do
 
-- Réduire la vitesse du carrousel dans les évenements
-- Positioner les informations de contact en 2 groupes de 2
-- Créer la carte
-- Mettre les photos
-- Update des textes
+- Ajouter un bouton Facebook dans le block de contact + fix de l'affichage sur PC
+- Rajouter des photos du Sco
 - Copyright (William) vers un lien existant
-- Le site sur mobile fait un peu de la merde
