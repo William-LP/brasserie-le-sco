@@ -163,6 +163,11 @@
       layoutMode: 'fitRows'
     });
 
+    // By default, we load the pizzas
+    menuIsotope.isotope({
+      filter: ".filter-pizzas"
+    });  
+
     $('#menu-flters li').on('click', function() {
       $("#menu-flters li").removeClass('filter-active');
       $(this).addClass('filter-active');
