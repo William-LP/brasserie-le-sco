@@ -163,6 +163,11 @@
       layoutMode: 'fitRows'
     });
 
+    // By default, we load the pizzas
+    menuIsotope.isotope({
+      filter: ".filter-pizzas"
+    });  
+
     $('#menu-flters li').on('click', function() {
       $("#menu-flters li").removeClass('filter-active');
       $(this).addClass('filter-active');
@@ -179,7 +184,9 @@
     autoplay: true,
     dots: true,
     loop: true,
-    items: 1
+    items: 1,
+    smartSpeed: 2500,
+    autoplayTimeout : 6500
   });
 
   // Testimonials carousel (uses the Owl Carousel library)
