@@ -1513,8 +1513,17 @@ section {
   color: #bab3a6;
 }
 
-.contact .info .open-hours, .contact .info .email, .contact .info .phone {
+.contact .info, .contact .info .email, .contact .info .phone {
   margin-top: 40px;
+}
+
+@media (max-width: 576px) {
+  .contact .info .open-hours {
+    margin-top: 40px;
+  }
+  .contact .info .open-hours, .contact .info .address, .contact .info .email, .contact .info .phone {
+    margin-left:15px;
+  }
 }
 
 .contact .php-email-form {
