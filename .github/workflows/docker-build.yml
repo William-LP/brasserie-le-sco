@@ -34,5 +34,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            ${{ env.DOCKER_REGISTRY }}/${{ github.repository }}:${{ github.sha }}
-            ${{ env.DOCKER_REGISTRY }}/${{ github.repository }}:latest
+            ${{ env.DOCKER_REGISTRY }}/william-lp/brasserie-le-sco:${{ github.sha }}
+            ${{ env.DOCKER_REGISTRY }}/william-lp/brasserie-le-sco:latest
