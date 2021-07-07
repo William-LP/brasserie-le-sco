@@ -36,11 +36,7 @@ jobs:
           tags: |
             ${{ env.DOCKER_REGISTRY }}/william-lp/brasserie-le-sco:${{ github.sha }}
             ${{ env.DOCKER_REGISTRY }}/william-lp/brasserie-le-sco:latest
-            
-      - uses: actions-hub/kubectl@master
-        env:
-          KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
-          
+                      
       - name: Deploy to cluster
         uses: garygrossgarten/github-action-ssh@release
         with:
