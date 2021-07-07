@@ -42,5 +42,5 @@ jobs:
           KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
 
       - name: rollout appli
-        run: ssh -i ${{ secrets.key }} ${{ secrets.user }}@${{ secrets.server }} "sudo kubectl rollout restart deployment/brasserie-le-sco-deployment"
+        run: ssh -i ${{ secrets.KEY }} ${{ secrets.USER }}@${{ secrets.SERVER }} "sudo kubectl rollout restart deployment/brasserie-le-sco-deployment"
         
