@@ -36,3 +36,11 @@ jobs:
           tags: |
             ${{ env.DOCKER_REGISTRY }}/william-lp/brasserie-le-sco:${{ github.sha }}
             ${{ env.DOCKER_REGISTRY }}/william-lp/brasserie-le-sco:latest
+            
+      - uses: actions-hub/kubectl@master
+        env:
+          KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
+
+      - name: rollout appli
+        run: ssh -i ${{ secrets.key }} ${{ secrets.user }}@${{ secrets.server }} "sudo kubectl rollout restart deployment/brasserie-le-sco-deployment"
+        
